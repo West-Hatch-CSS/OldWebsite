@@ -9,12 +9,13 @@ header {
     background: #35424a;
     color: #ffffff;
     padding: 10px 0;
-    text-align: center;
+    text-align: center; /* Center the text in the header */
 }
 
 .logo-title {
     display: flex;                /* Use Flexbox for alignment */
     align-items: center;         /* Center items vertically */
+    justify-content: center;     /* Center items horizontally */
 }
 
 #logo {
@@ -26,6 +27,7 @@ header {
 nav ul {
     list-style: none;           /* Remove default list styles */
     padding: 0;                 /* Remove padding */
+    margin: 0;                  /* Remove margin */
 }
 
 nav ul li {
@@ -52,5 +54,4 @@ footer {
     color: #ffffff;
     position: relative;
     bottom: 0;
-    width: 100%;
-}
+    width:
