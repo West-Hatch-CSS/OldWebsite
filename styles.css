@@ -12,19 +12,30 @@ header {
     text-align: center;
 }
 
+.logo-title {
+    display: flex;                /* Use Flexbox for alignment */
+    align-items: center;         /* Center items vertically */
+}
+
+#logo {
+    max-width: 50px;            /* Set a smaller width for the logo */
+    height: auto;               /* Maintain aspect ratio */
+    margin-right: 10px;         /* Space between logo and title */
+}
+
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style: none;           /* Remove default list styles */
+    padding: 0;                 /* Remove padding */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline;            /* Inline list items */
+    margin: 0 15px;            /* Space between list items */
 }
 
 nav a {
-    color: #ffffff;
-    text-decoration: none;
+    color: #ffffff;             /* Link color */
+    text-decoration: none;      /* Remove underline from links */
 }
 
 section {
