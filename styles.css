@@ -10,34 +10,36 @@ header {
     color: #ffffff;
     padding: 10px 0;
     text-align: center; /* Center the text in the header */
+    min-height: 100px;  /* Set a minimum height for the header */
 }
 
 .logo-title {
     display: flex;                /* Use Flexbox for alignment */
-    align-items: center;         /* Center items vertically */
-    justify-content: center;     /* Center items horizontally */
+    align-items: center;          /* Center items vertically */
+    justify-content: center;      /* Center items horizontally */
 }
 
 #logo {
-    max-width: 50px;            /* Set a smaller width for the logo */
-    height: auto;               /* Maintain aspect ratio */
-    margin-right: 10px;         /* Space between logo and title */
+    width: 70px;                  /* Set a fixed width for the logo */
+    height: auto;                 /* Maintain aspect ratio */
+    margin-right: 10px;           /* Space between logo and title */
+    background-color: transparent; /* Ensure the logo background is transparent */
 }
 
 nav ul {
-    list-style: none;           /* Remove default list styles */
-    padding: 0;                 /* Remove padding */
-    margin: 0;                  /* Remove margin */
+    list-style: none;             /* Remove default list styles */
+    padding: 0;                   /* Remove padding */
+    margin: 0;                    /* Remove margin */
 }
 
 nav ul li {
-    display: inline;            /* Inline list items */
-    margin: 0 15px;            /* Space between list items */
+    display: inline;              /* Inline list items */
+    margin: 0 15px;               /* Space between list items */
 }
 
 nav a {
-    color: #ffffff;             /* Link color */
-    text-decoration: none;      /* Remove underline from links */
+    color: #ffffff;               /* Link color */
+    text-decoration: none;        /* Remove underline from links */
 }
 
 section {
@@ -54,4 +56,5 @@ footer {
     color: #ffffff;
     position: relative;
     bottom: 0;
-    width:
+    width: 100%;
+}
