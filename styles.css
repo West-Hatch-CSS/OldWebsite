@@ -10,6 +10,7 @@ header {
     color: #ffffff;
     padding: 10px 0;
     text-align: center; /* Center the text in the header */
+    min-height: 100px;  /* Set a minimum height for the header */
 }
 
 .logo-title {
@@ -19,7 +20,7 @@ header {
 }
 
 #logo {
-    max-width: 50px;              /* Set a smaller width for the logo */
+    width: 70px;                  /* Set a fixed width for the logo */
     height: auto;                 /* Maintain aspect ratio */
     margin-right: 10px;           /* Space between logo and title */
     background-color: transparent; /* Ensure the logo background is transparent */
