@@ -80,21 +80,32 @@ footer {
 }
 
 /* Instagram Post Specific Styling */
-.instagram-post iframe, .instagram-media {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
-    display: block;
-}
-
-/* Instagram Media Adjustments */
-.instagram-media {
-    width: 100%;
+.instagram-post {
     max-width: 540px;
     margin: 0 auto;
+}
+
+/* Ensure Instagram embed is responsive */
+.instagram-post blockquote.instagram-media {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Fix Instagram iframe aspect ratio */
+.instagram-post .instagram-media {
+    position: relative;
+    width: 100%;
+    padding-bottom: 120%; /* Adjust this to fit the post ratio */
+    height: 0;
     overflow: hidden;
+}
+
+.instagram-post .instagram-media iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
