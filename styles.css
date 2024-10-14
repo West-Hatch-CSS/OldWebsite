@@ -90,15 +90,17 @@ footer {
     max-width: 100%;                  /* Limit maximum width */
     margin: 0 auto;                   /* Center the blockquote */
     padding: 0;                       /* No additional padding */
+    overflow: hidden;                 /* Prevent overflow */
 }
 
 .instagram-post iframe {
     width: 100%;                      /* Full width of the container */
-    height: auto;                     /* Maintain aspect ratio */
+    height: 100%;                     /* Set a specific height if needed */
     max-width: 100%;                  /* Limit maximum width */
+    max-height: 500px;                /* Adjust max-height as needed */
     border: none;                     /* Remove iframe border */
     border-radius: 8px;               /* Rounded corners for iframe */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow around iframe */
     margin: 0 auto;                   /* Center the iframe */
-    display: block;                   /* Make it a block element for centering */
+    display: block;                   /* Make it a block element for centering I AM BUG FIX 1*/
 }
