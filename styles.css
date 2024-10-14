@@ -1,3 +1,4 @@
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,43 +6,45 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header Styling */
 header {
     background: #35424a;
     color: #ffffff;
     padding: 10px 0;
-    text-align: center; /* Center the text in the header */
-    min-height: 100px;  /* Set a minimum height for the header */
+    text-align: center;
+    min-height: 100px;
 }
 
 .logo-title {
-    display: flex;                /* Use Flexbox for alignment */
-    align-items: center;          /* Center items vertically */
-    justify-content: center;      /* Center items horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #logo {
-    width: 70px;                  /* Set a fixed width for the logo */
-    height: auto;                 /* Maintain aspect ratio */
-    margin-right: 10px;           /* Space between logo and title */
-    background-color: transparent; /* Ensure the logo background is transparent */
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+    background-color: transparent;
 }
 
 nav ul {
-    list-style: none;             /* Remove default list styles */
-    padding: 0;                   /* Remove padding */
-    margin: 0;                    /* Remove margin */
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;              /* Inline list items */
-    margin: 0 15px;               /* Space between list items */
+    display: inline;
+    margin: 0 15px;
 }
 
 nav a {
-    color: #ffffff;               /* Link color */
-    text-decoration: none;        /* Remove underline from links */
+    color: #ffffff;
+    text-decoration: none;
 }
 
+/* Main Section Styling */
 section {
     padding: 20px;
     margin: 10px;
@@ -49,6 +52,7 @@ section {
     border-radius: 8px;
 }
 
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 10px 0;
@@ -61,28 +65,36 @@ footer {
 
 /* Shared styling for blog entries and Instagram posts */
 .blog-entry, .instagram-post {
-    background-color: #f9f9f9;      /* Light background for both */
-    padding: 20px;                  /* Consistent padding */
-    margin-bottom: 20px;            /* Space between entries */
-    border-radius: 8px;             /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Title styling for both types */
+/* Title Styling for Both Blog Entries and Instagram Posts */
 .blog-entry h3, .instagram-post h3 {
     margin-bottom: 10px;
-    color: #35424a;                 /* Same color as the header */
-    font-size: 1.5em;               /* Slightly larger heading font */
+    color: #35424a;
+    font-size: 1.5em;
 }
 
-/* Instagram post specific adjustments */
-.instagram-post iframe {
-    width: 100%;                    /* Full width of the container */
-    height: auto;                   /* Maintain aspect ratio */
-    max-width: 400px;               /* Limit maximum width */
-    border: none;                   /* Remove iframe border */
-    border-radius: 8px;             /* Rounded corners for iframe */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow around iframe */
-    margin: 0 auto;                 /* Center the iframe */
-    display: block;                 /* Make it a block element for centering */
+/* Instagram Post Specific Styling */
+.instagram-post iframe, .instagram-media {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    display: block;
+}
+
+/* Instagram Media Adjustments */
+.instagram-media {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    overflow: hidden;
 }
