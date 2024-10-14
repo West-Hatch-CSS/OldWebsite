@@ -1,4 +1,3 @@
-/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +5,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header Styling */
 header {
     background: #35424a;
     color: #ffffff;
@@ -44,7 +42,6 @@ nav a {
     text-decoration: none;
 }
 
-/* Main Section Styling */
 section {
     padding: 20px;
     margin: 10px;
@@ -52,7 +49,6 @@ section {
     border-radius: 8px;
 }
 
-/* Footer Styling */
 footer {
     text-align: center;
     padding: 10px 0;
@@ -72,36 +68,31 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Title Styling for Both Blog Entries and Instagram Posts */
+/* Title styling for both types */
 .blog-entry h3, .instagram-post h3 {
     margin-bottom: 10px;
     color: #35424a;
     font-size: 1.5em;
 }
 
-/* Instagram Post Specific Styling */
+/* Instagram post specific adjustments */
 .instagram-post {
-    max-width: 540px; /* Limit the width of Instagram posts */
-    margin: 0 auto;   /* Center the post */
+    text-align: center; /* Center content within the Instagram post container */
 }
 
-/* Styling for the Instagram embed */
 .instagram-post blockquote {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0 auto;  /* Center blockquote */
+    padding: 0;      /* Remove padding */
+    width: 100%;     /* Ensure it takes full width */
+    max-width: 540px; /* Limit maximum width */
 }
 
-/* Ensure the Instagram media scales correctly */
-.instagram-media {
-    width: 100% !important; /* Force full width */
-    height: auto !important; /* Allow height to auto adjust */
-    border: none; /* Remove border */
-    overflow: hidden; /* Prevent overflow issues */
-}
-
-/* Ensuring the iframe fits properly */
-.instagram-media iframe {
-    width: 100% !important; /* Ensure iframe width is 100% */
-    height: auto !important; /* Maintain aspect ratio */
-    border: none; /* Remove border from iframe */
+.instagram-post iframe {
+    width: 100%; /* Full width of the container */
+    height: 500px; /* Set a specific height */
+    border: none; /* Remove iframe border */
+    border-radius: 8px; /* Rounded corners for iframe */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow around iframe */
+    display: block; /* Make it a block element for centering */
+    margin: 0 auto; /* Center the iframe */
 }
