@@ -81,31 +81,27 @@ footer {
 
 /* Instagram Post Specific Styling */
 .instagram-post {
-    max-width: 540px;
-    margin: 0 auto;
+    max-width: 540px; /* Limit the width of Instagram posts */
+    margin: 0 auto;   /* Center the post */
 }
 
-/* Ensure Instagram embed is responsive */
-.instagram-post blockquote.instagram-media {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
+/* Styling for the Instagram embed */
+.instagram-post blockquote {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
-/* Fix Instagram iframe aspect ratio */
-.instagram-post .instagram-media {
-    position: relative;
-    width: 100%;
-    padding-bottom: 120%; /* Adjust this to fit the post ratio */
-    height: 0;
-    overflow: hidden;
+/* Ensure the Instagram media scales correctly */
+.instagram-media {
+    width: 100% !important; /* Force full width */
+    height: auto !important; /* Allow height to auto adjust */
+    border: none; /* Remove border */
+    overflow: hidden; /* Prevent overflow issues */
 }
 
-.instagram-post .instagram-media iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
+/* Ensuring the iframe fits properly */
+.instagram-media iframe {
+    width: 100% !important; /* Ensure iframe width is 100% */
+    height: auto !important; /* Maintain aspect ratio */
+    border: none; /* Remove border from iframe */
 }
