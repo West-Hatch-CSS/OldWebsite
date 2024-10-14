@@ -58,3 +58,31 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Shared styling for blog entries and Instagram posts */
+.blog-entry, .instagram-post {
+    background-color: #f9f9f9;      /* Light background for both */
+    padding: 20px;                  /* Consistent padding */
+    margin-bottom: 20px;            /* Space between entries */
+    border-radius: 8px;             /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Title styling for both types */
+.blog-entry h3, .instagram-post h3 {
+    margin-bottom: 10px;
+    color: #35424a;                 /* Same color as the header */
+    font-size: 1.5em;               /* Slightly larger heading font */
+}
+
+/* Instagram post specific adjustments */
+.instagram-post iframe {
+    width: 100%;                    /* Full width of the container */
+    height: auto;                   /* Maintain aspect ratio */
+    max-width: 400px;               /* Limit maximum width */
+    border: none;                   /* Remove iframe border */
+    border-radius: 8px;             /* Rounded corners for iframe */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow around iframe */
+    margin: 0 auto;                 /* Center the iframe */
+    display: block;                 /* Make it a block element for centering */
+}
