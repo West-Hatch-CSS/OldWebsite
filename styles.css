@@ -73,11 +73,12 @@ footer {
     margin-bottom: 10px;
     color: #35424a;                 /* Same color as the header */
     font-size: 1.5em;               /* Slightly larger heading font */
+    text-align: left;               /* Align title to the left */
 }
 
 /* Instagram post specific adjustments */
 .instagram-post {
-    text-align: center; /* Center content within the Instagram post container */
+    text-align: left; /* Left align content within the Instagram post container */
 }
 
 /* Center the Instagram media within the grey rectangle */
