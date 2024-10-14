@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -75,32 +76,27 @@ footer {
     font-size: 1.5em;               /* Slightly larger heading font */
 }
 
-/* Global box-sizing for better control */
-* {
-    box-sizing: border-box; /* Includes padding and border in element's total width and height */
-}
-
-/* Instagram post specific adjustments */
-.instagram-post {
-    text-align: left;                 /* Align text to the left */
-}
-
+/* Ensure Instagram post fits within its container */
 .instagram-post blockquote {
-    width: 100%;                      /* Full width of the container */
-    max-width: 100%;                  /* Limit maximum width */
-    margin: 0 auto;                   /* Center the blockquote */
-    padding: 0;                       /* No additional padding */
-    overflow: hidden;                 /* Prevent overflow */
+    margin: 0;                       /* Reset margins */
+    padding: 0;                      /* Reset padding */
+    width: 100%;                     /* Full width of the container */
+    max-width: 100%;                 /* Limit maximum width */
+    overflow: hidden;                /* Prevent overflow */
 }
 
 .instagram-post iframe {
-    width: 100%;                      /* Full width of the container */
-    height: 100%;                     /* Set a specific height if needed */
-    max-width: 100%;                  /* Limit maximum width */
-    max-height: 500px;                /* Adjust max-height as needed */
-    border: none;                     /* Remove iframe border */
-    border-radius: 8px;               /* Rounded corners for iframe */
+    width: 100%;                     /* Full width of the container */
+    height: auto;                    /* Maintain aspect ratio */
+    max-width: 100%;                 /* Limit maximum width */
+    border: none;                    /* Remove iframe border */
+    border-radius: 8px;              /* Rounded corners for iframe */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow around iframe */
-    margin: 0 auto;                   /* Center the iframe */
-    display: block;                   /* Make it a block element for centering I AM BUG FIX 1*/
+    margin: 0 auto;                  /* Center the iframe */
+    display: block;                  /* Make it a block element for centering */
+}
+
+/* Global box-sizing for better control */
+* {
+    box-sizing: border-box; /* Includes padding and border in element's total width and height */
 }
