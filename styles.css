@@ -99,3 +99,14 @@ footer {
 * {
     box-sizing: border-box; /* Includes padding and border in element's total width and height */
 }
+
+/* Additional mobile styles */
+@media (max-width: 600px) {
+    .instagram-post {
+        padding: 10px;            /* Reduce padding on mobile */
+    }
+
+    .instagram-post h3 {
+        font-size: 1.2em;         /* Smaller font size for title */
+    }
+}
