@@ -101,7 +101,7 @@ footer {
 }
 
 /* Additional mobile styles */
-@media (max-width: 600px) {
+@media (max-width: 430px) {
     .instagram-post {
         padding: 10px;            /* Reduce padding on mobile */
     }
