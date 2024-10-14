@@ -87,7 +87,6 @@ footer {
 
 .instagram-post iframe {
     width: 100%;                     /* Full width of the container */
-    height: auto;                    /* Maintain aspect ratio */
     max-width: 100%;                 /* Limit maximum width */
     border: none;                    /* Remove iframe border */
     border-radius: 8px;              /* Rounded corners for iframe */
