@@ -50,6 +50,7 @@ section {
     border-radius: 8px;
 }
 
+/* Footer styles */
 footer {
     text-align: center;
     padding: 10px 0;
@@ -76,37 +77,32 @@ footer {
     font-size: 1.5em;               /* Slightly larger heading font */
 }
 
-/* Ensure Instagram post fits within its container */
-.instagram-post blockquote {
-    margin: 0;                       /* Reset margins */
-    padding: 0;                      /* Reset padding */
-    width: 100%;                     /* Full width of the container */
-    max-width: 100%;                 /* Limit maximum width */
-    overflow: hidden;                /* Prevent overflow */
-}
-
-.instagram-post iframe {
-    width: 100%;                     /* Full width of the container */
-    max-width: 100%;                 /* Limit maximum width */
-    border: none;                    /* Remove iframe border */
-    border-radius: 8px;              /* Rounded corners for iframe */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow around iframe */
-    margin: 0 auto;                  /* Center the iframe */
-    display: block;                  /* Make it a block element for centering */
-}
-
 /* Global box-sizing for better control */
 * {
     box-sizing: border-box; /* Includes padding and border in element's total width and height */
 }
 
-/* Additional mobile styles */
-@media (max-width: 430px) {
-    .instagram-post {
-        padding: 10px;            /* Reduce padding on mobile */
-    }
+/* Instagram post specific adjustments */
+.instagram-post {
+    display: flex;                 /* Use flexbox for alignment */
+    flex-direction: column;       /* Stack items vertically */
+    align-items: flex-start;      /* Align items to the left */
+    width: 100%;                  /* Full width of the parent container */
+    overflow: hidden;             /* Prevent overflow from the container */
+}
 
-    .instagram-post h3 {
-        font-size: 1.2em;         /* Smaller font size for title */
+/* Ensuring the Instagram blockquote is responsive */
+.instagram-post blockquote {
+    width: 100%;                  /* Full width of the container */
+    max-width: 540px;             /* Limit max width */
+    margin: 0 auto;               /* Center blockquote */
+    padding: 0;                   /* Remove padding to prevent extra size */
+}
+
+/* Ensure responsiveness on mobile */
+@media (max-width: 600px) {
+    .instagram-post blockquote {
+        width: 100%;              /* Full width on smaller screens */
+        max-width: none;          /* Remove max-width constraint */
     }
 }
