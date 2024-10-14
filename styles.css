@@ -80,7 +80,9 @@ footer {
     text-align: center; /* Center content within the Instagram post container */
 }
 
+/* Center the Instagram media within the grey rectangle */
 .instagram-media {
+    display: inline-block; /* Allows for centering */
     margin: 0 auto; /* Center blockquote */
     padding: 0; /* Remove padding */
     width: 100%; /* Ensure it takes full width */
