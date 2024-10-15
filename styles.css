@@ -43,6 +43,10 @@ nav a {
     text-decoration: none;        /* Remove underline from links */
 }
 
+nav a {
+    white-space: nowrap;  /* Prevents text wrapping */
+}
+
 section {
     padding: 20px;
     margin: 10px;
