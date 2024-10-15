@@ -101,8 +101,30 @@ footer {
 
 /* Ensure responsiveness on mobile */
 @media (max-width: 600px) {
+    .instagram-post {
+        width: 50% !important;              /* Full width on smaller screens */
+        padding: 10px;            /* Adjust padding if necessary */
+    }
+
     .instagram-post blockquote {
-        width: 100%;              /* Full width on smaller screens */
+        width: 50 !important;              /* Full width on smaller screens */
         max-width: none;          /* Remove max-width constraint */
     }
+
+    /* Ensure the Instagram embeds are responsive */
+.instadiv .instagram-media {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
 }
+
+/* Optional: Remove left/right margins if any */
+.instadiv .instagram-media {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+}
+
+
+
