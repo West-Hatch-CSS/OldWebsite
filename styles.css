@@ -130,5 +130,19 @@ footer {
 
 }
 
+.logo-title h1 {
+    margin: 0; /* Ensures no extra spacing is added */
+}
 
+.logo-title h1 a {
+    text-decoration: none;
+    color: inherit;
+    display: inline;
+    cursor: pointer;
+}
 
+.logo-title h1 a:hover,
+.logo-title h1 a:focus {
+    text-decoration: none;
+    color: inherit;
+}
