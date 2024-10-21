@@ -20,11 +20,18 @@ header {
     justify-content: center;      /* Center items horizontally */
 }
 
+.logo-title a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
 #logo {
     width: 70px;                  /* Set a fixed width for the logo */
     height: auto;                 /* Maintain aspect ratio */
     margin-right: 10px;           /* Space between logo and title */
     background-color: transparent; /* Ensure the logo background is transparent */
+    vertical-align: middle;       /* Align the image vertically with the text */
 }
 
 nav ul {
@@ -128,7 +135,28 @@ footer {
     margin-right: 0 !important;
 }
 
+
 }
+
+.logo-title h1 {
+    margin: 0; /* Ensures no extra spacing is added */
+}
+
+.logo-title h1 a {
+    text-decoration: none;
+    color: inherit;
+    display: inline;
+    cursor: pointer;
+}
+
+.logo-title h1 a:hover,
+.logo-title h1 a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
 
 
 
