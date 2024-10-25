@@ -1,9 +1,29 @@
 /* Global Styles */
+@font-face {
+    font-family: 'lato-light';
+    src: url('lato-light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('lato.ttf') format('truetype');
+}
+
+
+
+h1, h2, h3 {
+    font-family: 'lato', sans-serif;
+}
+
+nav {
+    font-family: 'lato-light', sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'lato', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ad2b2b;
 }
 
 header {
@@ -145,4 +165,114 @@ footer {
 .logo-title h1 a:focus {
     text-decoration: none;
     color: inherit;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #ad2b2b;  /* Dark gray, almost black */
+    border-radius: 50%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-right: 5px;  /* Increased from 10px to 15px */
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(0) invert(1);  /* This makes the SVG white */
+}
+
+/* Add this new section for the layout */
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px 0;  /* 10px vertical gap, 0 horizontal gap */
+    padding: 10px 0;  /* 10px top and bottom padding, 0 left and right */
+    box-sizing: border-box;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+    .content-wrapper {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0;  /* No gap between columns */
+        row-gap: 10px;  /* Maintain 10px gap between rows */
+    }
+}
+
+#blog {
+    background: transparent;
+    padding: 10px 10px 20px 10px; /* Top, Right, Bottom, Left */
+}
+
+#blog h2 {
+    color: #ffffff; /* Ensure this contrasts with your background */
+    text-align: left; /* Align text to the left */
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 20px;
+    padding-left: 10px; /* Match the left padding of the section */
+}
+
+.blog-entry {
+    background: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Remove any box-shadow or additional styling on .blog-entry if it existed */
+
+/* Add this new media query */
+@media screen and (max-width: 600px) {
+    .contact-menu-item {
+        display: none;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    nav ul li {
+        margin: 0;  /* Remove any existing margins */
+    }
+}
+
+/* Add this media query for mobile devices */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem; /* Adjust this value as needed */
+    }
+    
+    /* If you want to target specific titles, use more specific selectors */
+    #blog h2, 
+    section h2 {
+        font-size: 1.3rem; /* Adjust this value as needed */
+    }
+}
+
+/* Add this media query for mobile devices */
+@media screen and (max-width: 600px) {
+    /* Assuming your title is in a header and menu is in a nav element */
+    header {
+        margin-bottom: 15px; /* Increase this value for more space */
+    }
+
+    /* If your menu is not directly below the header, target it specifically */
+    nav {
+        margin-top: 15px; /* Increase this value for more space */
+    }
+
+    /* If you're using a specific class for your title or menu, use those instead */
+    .logo-title {
+        margin-bottom: 15px;
+    }
+
+    .main-menu {
+        margin-top: 15px;
+    }
 }
